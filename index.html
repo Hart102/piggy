@@ -5,8 +5,232 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Piggy_clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    
+    <!-----Moblie Menu----->
+    <nav class="d-lg-none fixed-top top-0 bg-white py-4">
+        <div class="container px-4">
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- <span><img src="./Images/logo.svg" alt=""></span> -->
+                <h1 class="fw-bolder">EasyGo.com</h1>
+                <span class="d-flex">
+                    <span class="icon-hamburger col-12" role="button" onClick="hamburgerFunction()"><img src="./Images/icon-hamburger.svg" class="img-fluid"></span>
+                    <span class="icon-close col-12 d-none" role="button" onClick="hamburgerFunction()"><img src="./Images/icon-close.svg"></span>
+                </span>
+            </div>
+            <div class="menu d-none text-center my-5">
+                <a href="#" class="nav-link my-2 fw-bold text-dark">Save</a>
+                <a href="#" class="nav-link my-2 fw-bold text-dark">Invest</a>
+                <a href="#" class="nav-link my-2 fw-bold text-dark">Stories</a>
+                <a href="#" class="nav-link my-2 fw-bold text-dark">FAQs</a>
+                <a href="#" class="nav-link my-2 fw-bold text-dark">Blog</a>
+                <a href="#" class="nav-link my-2 fw-bold text-dark my-2">Sign in</a>
+                <a href="#" class="nav-link my-2 fw-bold text-dark border rounded-start rounded-end p-3">Create a free account</a>
+            </div>
+        </div>
+    </nav>
+    <!------Desktop navbar------>
+    <nav class="bg-white fixed-top top-0 d-lg-block d-none">
+        <div class="container py-3 d-flex align-items-center justify-content-between">
+            <!-- <span><img src="./Images/logo.svg"></span> -->
+            <h1 class="fw-bolder">EasyGo.com</h1>
+            <div class="d-lg-flex d-none text-center">
+                <a href="#" class="nav-link fw-bold text-dark">Save</a>
+                <a href="#" class="nav-link fw-bold text-dark">Invest</a>
+                <a href="#" class="nav-link fw-bold text-dark">Stories</a>
+                <a href="#" class="nav-link fw-bold text-dark">FAQs</a>
+                <a href="#" class="nav-link fw-bold text-dark">Blog</a>
+            </div>
+            <div class="d-flex">
+                <a href="#" class="nav-link fw-bold text-dark border rounded-start rounded-end px-3 py-2 mx-3">Sign in</a>
+                <a href="#" class="nav-link fw-bold text-white bg-dark border rounded-start rounded-end px-3 py-2">Create a free account</a>
+            </div>
+        </div>
+    </nav>
+    <!------Banner section------>
+    <section class="my-5">
+        <div class="container d-lg-flex align-items-center justify-content-between py-5 text-lg-start text-center">
+            <div class="col-md-6 my-5">
+                <h1 class="fw-bolder display-3">The Better Way to Save & Invest.</h1>
+                <p class="my-4">PiggyVest helps over 4 million customers achieve their financial goals by helping them save and invest with ease.</p>
+                <button class="text-white fw-bold bg-dark border rounded-start rounded-end p-3">Create free account</button>
+                <div class="d-flex justify-content-lg-start justify-content-center align-items my-5">
+                    <button class="btn d-flex align-items-center border p-3">
+                        <img src="./Images/apple-icon.svg" class="mx-2">
+                        Get on iphone
+                    </button>
+                    <button class="btn d-flex align-items-center border p-3 mx-3">
+                        <img src="./Images/google-icon.svg" class="mx-2">
+                        Get on Android
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center">
+                <img src="./Images/headerImg.png" class="img-fluid">
+            </div>
+        </div>
+    </section>
+    <!---------Security--------->
+    <section class="py-lg-4">
+        <div class="container my-5">
+            <div class="col-md-9 mx-auto d-lg-flex justify-content-center text-lg-start text-center">
+                <div class="col-lg-1 col-2 mx-auto my-4 mx-lg-0 my-lg-0"><img src="./Images/security.png" class="img-fluid"></div>
+                <div class="mx-lg-5 px-lg-0 px-4">
+                    <h2 class="fw-bolder fs-1">Your security is our priority</h2>
+                    <p>PiggyVest uses the highest level of Internet Security and it is secured by 256 bits SSL security encryption to ensure that your information is comepletely protected from fraud.</p>
+                    <a href="#" class="text-decoration-none fw-bold">Learn more ></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----4 ways to build ----->
+    <section class="py-lg-5">
+        <div class="container py-4">
+            <div class="row text-lg-start text-center">
+                <div class="col-md-6 col-lg-4 px-lg-0 px-5">
+                    <h2 class="fw-bolder fs-1">4 ways to build your savings</h2>
+                    <p class="my-4">Earn 5%-15% when you save with any of these PiggyVest plans.</p>
+                    <button class="btn btn-dark d-flex align-items-center border p-3 fw-bold mx-auto mx-lg-0">Get on Android</button>
+                </div>
+                <div class="col-md-8 px-lg-0 px-5">
+                    <div class="row g-3">
+                        <div class="col-md-5 p-lg-4 p-5 rounded-top rounded-bottom">
+                            <div class="col-2 mx-auto mx-lg-0"><img src="./Images/automate_savings.png" class="img-fluid"></div>
+                            <div class="fs-4 fw-bold my-3">Automated Savings</div>
+                            <p>Build a dedicated savings faster on your terms automatically or manually.</p>
+                            <div class="d-flex align-items-center justify-content-lg-start justify-content-center">
+                                <i class="fa fa-arrow-right"></i>
+                                <a href="#" class="text-decoration-none text-dark fw-bold my-5 mx-2">Piggy bank</a>
+                            </div>
+                        </div>
+                        <div class="col-md-5 p-lg-4 p-5 rounded-top rounded-bottom mx-lg-5">
+                            <div class="col-2 mx-auto mx-lg-0"><img src="./Images/fixed_savings.png" class="img-fluid"></div>
+                            <div class="fs-4 fw-bold my-3">Fixed Savings</div>
+                            <p>Lock money away for a fixed duration with no access to it until maturity. It's like having a customer fixed deposite.</p>
+                            <div class="d-flex align-items-center justify-content-lg-start justify-content-center">
+                                <i class="fa fa-arrow-right"></i>
+                                <a href="#" class="text-decoration-none text-dark fw-bold my-5 mx-2">Safelock</a>
+                            </div>
+                        </div>
+                        <div class="col-md-5 p-lg-4 p-5 rounded-top rounded-bottom">
+                            <div class="col-2 mx-auto mx-lg-0"><img src="./Images/goal_oriented.png" class="img-fluid"></div>
+                            <div class="fs-4 fw-bold my-3">Goal-oriented Savings</div>
+                            <p>Reach all your savings gaols faster. Save toward multiple goals on your own or with a group.</p>
+                            <div class="d-flex align-items-center justify-content-lg-start justify-content-center">
+                                <i class="fa fa-arrow-right"></i>
+                                <a href="#" class="text-decoration-none text-dark fw-bold my-5 mx-2">Target Saving</a>
+                            </div>
+                        </div>
+                        <div class="col-md-5 p-lg-4 p-5 rounded-top rounded-bottom mx-lg-5">
+                            <div class="col-2 mx-auto mx-lg-0"><img src="./Images/automate_savings.png" class="img-fluid"></div>
+                            <div class="fs-4 fw-bold my-3">Flexible Savings</div>
+                            <p>Save, transfer, withdraw, manage and organise your money for free at any time.</p>
+                            <div class="d-flex align-items-center justify-content-lg-start justify-content-center">
+                                <i class="fa fa-arrow-right"></i>
+                                <a href="#" class="text-decoration-none text-dark fw-bold my-5 mx-2">Flex Naira</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----Access & Opportunities----->
+    <section class="py-lg-5">
+        <div class="container my-5">
+            <div class="col-md-12 mx-auto d-lg-flex justify-content-center align-items-center text-center text-lg-start">
+                <div class="col-lg-3 col-md-2 mx-auto px-5 mx-lg-0 my-lg-0 my-5 px-lg-3"><img src="./Images/access_investment_opportunities.png" class="img-fluid"></div>
+                <div class="col-md-6 mx-lg-5 px-5">
+                    <h2 class="fw-bolder display-5">Access investment opportunities</h2>
+                    <p class="my-3">Invest securely and confidently on the go. Grow your money confidently by investing in pre-vetted investment opportunities.</p>
+                    <div class="d-flex align-items-center bg-primary1 justify-content-lg-start justify-content-center">
+                        <a href="#" class="text-decoration-none fw-light">Learn more about Investments</a>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------Saver of the month------->
+    <section class="py-3" style="background: rgb(67, 67, 218)">
+        <div class="container d-lg-flex align-items-center py-50 text-lg-start text-center text-white">
+            <div class="col-md-6 px-lg-0 p-5">
+                <h2 class="display-3 fw-bolder">Meet the saver of the month!</h2>
+                <p class="lh-lg">Every month, we shine a spotlight on one saver, asking them questions about their savings culture and how the product is specifically helping them shape how they spend and save for future responsibilities.</p>
+                <div class="d-flex align-items-center justify-content-lg-start justify-content-center">
+                    <i class="fa fa-arrow-right"></i>
+                    <a href="#" class="text-decoration-none text-white fw-bold my-5 mx-2">Meet Felicia</a>
+                </div>
+            </div>
+            <div class="col-md-6 d-lg-flex justify-content-end">
+                <img src="./Images/headerImg.png" class="img-fluid">
+            </div>
+        </div>
+    </section>
+    <!---------Customers--------->
+    <section>
+        <div class="col-md-6 mx-auto p-5 text-center">
+            <h2 class="fw-bolder display-6 my-3">4 Million + customers</h2>
+            <p>Since launching in 2016, over 4,000,000 people have used PiggyVest to manage their money better, avoid over-spending and be more accountable.</p>
+            <button class="text-white fw-bold bg-dark border rounded-start rounded-end px-3 py-2 my-4">Create free account</button>
+            <div class="d-flex justify-content-center align-items">
+                <button class="d-flex align-items-center border-0 px-3 py-2">
+                    <img src="./Images/apple-icon.svg" class="mx-2">
+                    Get on iphone
+                </button>
+                <button class="d-flex align-items-center border-0 px-3 py-2 mx-3">
+                    <img src="./Images/google-icon.svg" class="mx-2">
+                    Get on Android
+                </button>
+            </div>
+        </div>
+    </section>
+    <!---------Footer--------->
+    <footer class="py-5">
+        <div class="container d-lg-flex justify-content-between flex-wrap">
+            <span><img src="./Images/logo.svg" class="img-fluid"></span>
+            <div class="d-flex justify-content-space-around my-lg-0 my-5">
+                <div>
+                    <a href="#" class="nav-link text-dark fw-bold">Products</a href="#">
+                    <a href="#" class="nav-link text-dark">Piggybank</a href="#">
+                    <a href="#" class="nav-link text-dark">Invest</a href="#">
+                    <a href="#" class="nav-link text-dark">Safelock</a href="#">
+                    <a href="#" class="nav-link text-dark">Target Savings</a href="#">
+                    <a href="#" class="nav-link text-dark">Flex Naira</a href="#">
+                </div>
+                <div>
+                    <a href="#" class="nav-link text-dark fw-bold">Company</a href="#">
+                    <a href="#" class="nav-link text-dark">About</a href="#">
+                    <a href="#" class="nav-link text-dark">FAQs</a href="#">
+                    <a href="#" class="nav-link text-dark">Blog</a href="#">
+                </div>
+            </div>
+            <div >
+                <a href="#" class="nav-link text-dark fw-bold">Legal</a href="#">
+                <a href="#" class="nav-link text-dark">Terms</a href="#">
+                <a href="#" class="nav-link text-dark">Privacy</a href="#">
+                <a href="#" class="nav-link text-dark">Security</a href="#">
+            </div>
+            <div class="col-md-3 text-lg-end text-start p-3">
+                <p>Tesmot house, Abdulrahman Okene close, Victoria Island, Lagos, Nigeria. contact@piggyvest.com +234 700 933 933 933</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        const element_selector = element => document.querySelector(element)
+        const hamburgerFunction = () => { //Hamburger menu functionality
+            element_selector('.icon-hamburger').classList.toggle('d-none')
+            element_selector('.icon-close').classList.toggle('d-none')
+            element_selector('.menu').classList.toggle('d-none')
+        }
+        window.addEventListener('scroll', () => { //scroll functionality
+            window.scrollY > 8 ? document.querySelectorAll('nav').forEach(nav => nav.classList.add('shadow-sm'))
+            : document.querySelectorAll('nav').forEach(nav => nav.classList.remove('shadow-sm'))
+        })
+    </script>
 </body>
 </html>
